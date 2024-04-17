@@ -1,0 +1,135 @@
+body {
+    background-color: #5d6878;
+}
+
+.cloud {
+    border: 1px solid darkgrey;
+    background-color: darkgray;
+    width: 300px;
+    height: 100px;
+    margin-top: 150px;
+    margin-left: 400px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.cloud::before {
+    content: "";
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+
+.cloud::after {
+    content: "";
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+ul {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 400px;
+    padding-left: 0px;
+    width: 300px;
+    justify-content: space-evenly;
+
+    border-bottom: 5px solid #383a3d;
+}
+
+li {
+    list-style: none;
+    border: 1px solid darkgrey;
+    background-color: darkgrey;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    animation-name: raindrops;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes raindrops {
+    0% {
+        transform: translateY(-250px) scale(1, 1);
+    }
+
+    90% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: translateY(5px) scale(0.1, 0.1);
+    }
+}
+
+li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+li:nth-child(3) {
+    animation-delay: 0.05s;
+}
+
+li:nth-child(4) {
+    animation-delay: 0.25s;
+}
+
+li:nth-child(5) {
+    animation-delay: 0.35s;
+}
+
+li:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+li:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+li:nth-child(8) {
+    animation-delay: 0.45s;
+}
+
+li:nth-child(9) {
+    animation-delay: 0.25s;
+}
+
+li:nth-child(10) {
+    animation-delay: 0.3s;
+}
+
+li:nth-child(11) {
+    animation-delay: 0.35s;
+}
+
+li:nth-child(12) {
+    animation-delay: 0.1s;
+}
+
+li:nth-child(13) {
+    animation-delay: 0.4s;
+}
+
+li:nth-child(14) {
+    animation-delay: 0.2s;
+}
+
+li:nth-child(15) {
+    animation-delay: 0.5s;
+}
